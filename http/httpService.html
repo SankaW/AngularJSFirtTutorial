@@ -5,13 +5,20 @@
         <script src="../angular-route.js"> </script>
         <script src="controller.js"></script>
     </head>
-    <input type="text" name="searchBox" ng-model="searchBox">
+    <div id="searchBoxes">
+        Global Search Filter :<input type="text" ng-model="globalSearch.$"><br>
+        Global Search Filter(Name) :<input type="text" ng-model="globalSearch.Name"><br>
+        Global Search Filter(Age) :<input type="text" ng-model="globalSearch.Age"><br>
+        Global Search Filter(City) :<input type="text" ng-model="globalSearch.City"><br>
+        
+    </div>
+    
     <body ng-app="mainApp">
         <div ng-controller="people">
             <ul>
                 <h2>Name and Age :</h2>
-                <li ng-repeat="person in persons | filter:searchBox">
-                    {{ person.Name + ' : ' + person.Age}}
+                <li ng-repeat="person in persons | filter:globalSearch">
+                    {{'Person details :-' +person.Name + ' : ' + person.Age+' : '+person.City }}
                 </li>
             </ul>
         </div>

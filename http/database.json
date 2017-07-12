@@ -2,19 +2,23 @@
     "records":[
         {
             "Name":"Sanka",
-            "Age":"26"
+            "Age":"26",
+            "City":"Minuwangoda"
         },
         {
             "Name":"Kasun",
-            "Age":"16"
+            "Age":"16",
+            "City":"Moratuwa"
         },
         {
             "Name":"Saman",
-            "Age":"35"
+            "Age":"35",
+            "City":"Colombo"
         },
         {
             "Name":"Alex",
-            "Age":"10"
+            "Age":"10",
+            "City":"Kottawa"
         }
     ]
 }
