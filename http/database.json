@@ -1,0 +1,20 @@
+{
+    "records":[
+        {
+            "Name":"Sanka",
+            "Age":"26"
+        },
+        {
+            "Name":"Kasun",
+            "Age":"18"
+        },
+        {
+            "Name":"Saman",
+            "Age":"35"
+        },
+        {
+            "Name":"Alex",
+            "Age":"10"
+        }
+    ]
+}
