@@ -5,11 +5,12 @@
         <script src="../angular-route.js"> </script>
         <script src="controller.js"></script>
     </head>
+    <input type="text" name="searchBox" ng-model="searchBox">
     <body ng-app="mainApp">
         <div ng-controller="people">
             <ul>
                 <h2>Name and Age :</h2>
-                <li ng-repeat="person in persons">
+                <li ng-repeat="person in persons | filter:searchBox">
                     {{ person.Name + ' : ' + person.Age}}
                 </li>
             </ul>
